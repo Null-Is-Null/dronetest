@@ -17,5 +17,5 @@ steps:
 kind: secret
 name: mykey
 get:
-  path: kv/data/test/data
+  path: kv/data/test
   name: mykey
