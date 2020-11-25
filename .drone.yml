@@ -10,7 +10,7 @@ steps:
     SECRETVAL:
       from_secret: mykey
   commands:
-    - env
+    - echo $SECRETVAL
     - echo TESTING
 
 ---
