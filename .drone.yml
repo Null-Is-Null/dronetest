@@ -1,14 +1,11 @@
 ---
 kind: pipeline
-type: exec
+type: docker
 name: default
-
-platform:
-  os: linux
-  arch: amd64
 
 steps:
 - name: build
+  image: ubuntu:20.04
   environment:
     SECRETVAL:
       from_secret: mykey
